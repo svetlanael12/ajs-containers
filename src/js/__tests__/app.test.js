@@ -1,8 +1,8 @@
-import Team from "../app";
+import Team from '../app';
 
 const team = new Team();
-let person1 = {name: 'Hasel'};
-let person2 = {name: 'John'}; 
+const person1 = { name: 'Hasel' };
+const person2 = { name: 'John' };
 
 test('method add success', () => {
   team.add(person1);
@@ -22,7 +22,7 @@ test('method addAll', () => {
 
 test('method toArray()', () => {
   team.toArray();
-  let type = typeof team;
+  const type = typeof team;
 
-  expect(type).toBe("object");
+  expect(type).toBe('object');
 });
